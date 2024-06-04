@@ -1,5 +1,5 @@
 
-
+//slides
 
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
@@ -47,6 +47,8 @@ function nextSlide(){
 
 }
 
+//about scroll
+
 
 window.addEventListener('scroll', reveal);
 
@@ -65,6 +67,8 @@ function reveal() {
         }
     });
 }
+
+//cards
 
 
 document.addEventListener("DOMContentLoaded", function() {

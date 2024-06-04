@@ -1,5 +1,5 @@
 * {
-    font-family:'Roboto', sans-serif;
+    font-family:'Roboto',system-ui, sans-serif;
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
@@ -14,10 +14,45 @@ body {
     grid-template-rows:200px 1fr;
     grid-template-areas: 
     "side header"
-    "side main";
+    "side main"
+    "side footer";
    
 
 }
+
+.footer {
+    margin-top: auto;
+    background-color:  #181a1b;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.footer-text {
+    color: #f6f7f9;
+    font-size: clamp(15px, 3vw, 20px);
+    display: flex;
+    flex-direction: row;
+    margin-right: 270px;
+    gap: 40px;
+}
+
+.footer-text a{
+    color: #f6f7f9;
+    font-size: clamp(15px, 3vw, 20px);
+    margin-right: 30px;
+    text-decoration: none;  
+    
+}
+
+.footer-text a:hover {
+    text-shadow: 0 0 10px #ffffff; 
+    filter: dropshadow(color=#000000, offx=2, offy=2);
+  
+} 
+
 
 
 .main {
@@ -77,7 +112,7 @@ section .cards .text-card {
     margin: 30px;
     padding: 50px;
     border-radius: 10px;
-    background-color: #181a1b;
+    background-color: #19181b;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 1px  #000;
@@ -145,7 +180,6 @@ section .cards .text-card h3{
     font-size: 28px;
     line-height: 70px;
     text-align: center;
-    user-select: none;
 }
 
 
@@ -200,7 +234,7 @@ section .cards .text-card h3{
   
 }
 
-.tech {
+.stack {
     display: flex;
     justify-content: center;
   
