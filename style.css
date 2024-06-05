@@ -12,6 +12,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background: #181a1b;
     /* background-color: #222324; */
     min-height: 100vh;
     display: grid;
