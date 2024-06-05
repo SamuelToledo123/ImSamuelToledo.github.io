@@ -49,29 +49,33 @@ body {
 .header-text {
     color: #f6f7f9;
     font-style: italic;
-    font-size: 30px;
+    font-size: clamp(22px,6vw,30px);
     padding: 50px 35px;
 }
 
 .sidebar {
     position: fixed;
-    background-color: #181a1b;
+    background: #181a1b;
     grid-area: side;
+    position: absolute;
     /* left: -240px; */
     width: 300px;
     min-height: 100%;
-    background: #181a1b;
-    transition: all .5s ease; 
+    transition: all .5s ease;
+
 }
 
-
-
 .sidebar-image {
+/*
+    margin-top: 85px;
+    margin-left: 95px;  */
     margin-top: 55px;
     margin-left: 70px;
+    /* max-height: 110px; */
     max-height: 150px;
     width: auto;
-    border-radius: 50%;  
+    border-radius: 50%;
+
 }
 
 
@@ -80,7 +84,7 @@ body {
     font-size: 28px;
     line-height: 70px;
     text-align: center;
-    user-select: none;
+
 }
 
 
@@ -89,22 +93,25 @@ body {
     color: #f6f7f9;
     height: 65px;
     width: 100%;
-    /* line-height: 65px; */
-    padding-top: 50px;
+    line-height: 65px;
+    padding-top: 0px;
     padding-left:60px;
-    /* padding-left:30px;
+    padding-left:30px;
     border-bottom: 1px solid rgba(255,255,255,.1);
     border-top: 1px solid black;
-    border-left: 5px solid red solid transparent; */
-    box-sizing: border-box;  
-    text-decoration-line: none;    
+    border-left: 5px solid red solid transparent;
+    box-sizing: border-box;
+    text-decoration-line: none;
 }
 
-.sidebar a:hover, a.active {
-    text-shadow: 0 0 10px #ffffff; 
+ .sidebar a:hover, a.active {
+    text-shadow: 0 0 10px #ffffff;
     filter: dropshadow(color=#000000, offx=2, offy=2);
     /* border-left: 5px solid #f6f7f9; */
-} 
+}
+
+
+
 .sidebar a i {
     font-size: 23px;
     margin-right: 16px;
@@ -112,6 +119,12 @@ body {
 .sidebar a span {
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.sidebar header  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
 }
 
 .container {
@@ -139,6 +152,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    z-index: 1;
 
 }
 
@@ -242,54 +256,62 @@ body {
     }
 
     .sidebar{
+        top: 0;
         position: fixed;
-        height: auto;
+        height: 100%;
         width: 70px;
         left: 0;
         margin: auto;
+        z-index: 10;
     }
 
     .sidebar-image  {
        visibility: hidden;
-     
+
     }
+
+
 
     /* .sidebar-image  {
         margin: 10px 10px;
         height: 50px;
         border: #000;
-     
+
     } */
 
 
     .sidebar header,#btn,#cancel {
         display: none;
     }
- 
 
-     .sidebar span {
+
+    .sidebar span {
         position: absolute;
-        margin-left: 23px;
+        margin-left: 28px;
         opacity: 0;
         visibility: hidden;
     }
 
+
     .sidebar a i{
-        margin-left:-35px ;
+        margin-left:-10px ;
 
     }
 
-     /* a:hover {
+    .sidebar a:hover {
         width: 200px;
         background: inherit;
 
+
     }
 
-     .sidebar a:hover span{
+    .sidebar a:hover span{
         opacity: 1;
         visibility: visible;
 
-    }  */
+
+    }
+
     section .cards {
         flex-direction: column;
     }
@@ -298,33 +320,6 @@ body {
         margin: 20px;
         padding: 30px;
        
-    }
-
-    .card:nth-child(1) {
-        background: linear-gradient(45deg, rgba(20, 252, 51, 0.856),rgba(5, 21, 241, 0.4));
-        border-top: 1px solid rgb(27, 80, 255);
-        border-left: 1px solid rgb(27, 255, 57);
-      
-    }
-    
-    .card:nth-child(2) {
-        background: linear-gradient(45deg, rgba(20, 74, 252, 0.856),rgba(5, 241, 221, 0.4));
-        border-top: 1px solid rgba(27, 80, 255, 0.808);
-        border-left: 1px solid rgba(27, 80, 255, 0.808);
-    }
-    
-    .card:nth-child(3) {
-        background: linear-gradient(45deg, rgba(252, 16, 48, 0.849),rgba(194, 5, 241, 0.925));
-        border-top: 1px solid rgba(202, 27, 255, 0.808);
-        border-left: 1px solid rgba(255, 27, 57, 0.521);
-       
-    }
-    
-    .card:nth-child(4) {
-        background: linear-gradient(45deg, rgba(36, 252, 16, 0.849),rgba(241, 206, 5, 0.925));
-        border-top: 1px solid rgba(80, 255, 27, 0.493);
-        border-left: 1px solid rgba(255, 251, 27, 0.425);
-     
     }
 
     .card:hover {

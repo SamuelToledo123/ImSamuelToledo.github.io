@@ -149,29 +149,32 @@ section .cards .text-card h3{
 .header-text {
     color: #f6f7f9;
     font-style: italic;
-    font-size: 30px;
+    font-size: clamp(22px,6vw,30px);
     padding: 50px 35px;
 }
 
 .sidebar {
     position: fixed;
-    background-color: #181a1b;
+    background: #181a1b;
     grid-area: side;
     /* left: -240px; */
     width: 300px;
-    height: 100%;
-    background: #181a1b;
-    transition: all .5s ease; 
+    min-height: 100%;
+    transition: all .5s ease;
+
 }
 
-
-
 .sidebar-image {
+/*
+    margin-top: 85px;
+    margin-left: 95px;  */
     margin-top: 55px;
     margin-left: 70px;
+    /* max-height: 110px; */
     max-height: 150px;
     width: auto;
-    border-radius: 50%;  
+    border-radius: 50%;
+
 }
 
 
@@ -180,6 +183,7 @@ section .cards .text-card h3{
     font-size: 28px;
     line-height: 70px;
     text-align: center;
+
 }
 
 
@@ -188,22 +192,25 @@ section .cards .text-card h3{
     color: #f6f7f9;
     height: 65px;
     width: 100%;
-    /* line-height: 50px; */
-    padding-top: 50px;
+    line-height: 65px;
+    padding-top: 0px;
     padding-left:60px;
-    /* padding-left:30px;
+    padding-left:30px;
     border-bottom: 1px solid rgba(255,255,255,.1);
     border-top: 1px solid black;
-    border-left: 5px solid red solid transparent; */
-    box-sizing: border-box;  
-    text-decoration-line: none;    
+    border-left: 5px solid red solid transparent;
+    box-sizing: border-box;
+    text-decoration-line: none;
 }
 
-.sidebar a:hover, a.active {
-    text-shadow: 0 0 10px #ffffff; 
+ .sidebar a:hover, a.active {
+    text-shadow: 0 0 10px #ffffff;
     filter: dropshadow(color=#000000, offx=2, offy=2);
     /* border-left: 5px solid #f6f7f9; */
-} 
+}
+
+
+
 .sidebar a i {
     font-size: 23px;
     margin-right: 16px;
@@ -211,6 +218,12 @@ section .cards .text-card h3{
 .sidebar a span {
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.sidebar header  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
 }
 
 
@@ -274,13 +287,14 @@ section .cards .text-card h3{
         grid-template-rows: 200px 1fr;
         grid-template-areas: 
         "side header"
-        "side main";
+        "side main"
+        "side footer";
 
     }
 
     .sidebar{
+        top: 0;
         position: fixed;
-        height: auto;
         width: 70px;
         left: 0;
         margin: auto;
@@ -288,46 +302,51 @@ section .cards .text-card h3{
 
     .sidebar-image  {
        visibility: hidden;
-     
+
     }
+
+
 
     /* .sidebar-image  {
         margin: 10px 10px;
         height: 50px;
         border: #000;
-     
+
     } */
 
 
     .sidebar header,#btn,#cancel {
         display: none;
     }
- 
+
 
     .sidebar span {
         position: absolute;
-        margin-left: 23px;
+        margin-left: 28px;
         opacity: 0;
         visibility: hidden;
     }
 
+
     .sidebar a i{
-        margin-left:-35px ;
+        margin-left:-10px ;
 
     }
 
-    /* a:hover {
+    a:hover {
         width: 200px;
         background: inherit;
-        
+
 
     }
 
     .sidebar a:hover span{
-        opacity: 5;
+        opacity: 1;
         visibility: visible;
 
-    } */
+
+    }
+
     section .cards {
         flex-direction: column;
     }
@@ -350,7 +369,8 @@ section .cards .text-card h3{
         grid-template-rows: 150px 1fr;
         grid-template-areas: 
         "side header"
-        "side main";
+        "side main"
+        "side footer";
 
     }
     .header-text {
@@ -360,7 +380,7 @@ section .cards .text-card h3{
 
  
     .about-me {
-        width: 100%;
+        width: 90%;
     
        
     }
@@ -387,7 +407,8 @@ section .cards .text-card h3{
         grid-template-rows:150px 1fr;
         grid-template-areas: 
         "side header"
-        "side main";
+        "side main"
+        "side footer";
 
     }
 
@@ -401,11 +422,12 @@ section .cards .text-card h3{
         flex-direction: column;
     }
 
-    .about-text p{
-        width: 100%;
+    section {
+        min-height: 10vh;
     
-       
     }
+
+  
     
 
 }
