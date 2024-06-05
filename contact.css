@@ -248,17 +248,10 @@ body {
     body {
         grid-template-columns: 70px 1fr;
         grid-template-rows: 200px 1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
 
     }
 
     .sidebar{
-        top: 0;
-        position: fixed;
-        height: 100%;
         width: 70px;
         left: 0;
         margin: auto;
@@ -337,15 +330,9 @@ body {
     body {
         grid-template-columns: 70px 1fr;
         grid-template-rows: 150px 1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
 
     }
-    .header-text {
-        font-size: 21px;
-    }
+
  
     .about-me {
         width: 100%;
@@ -378,11 +365,6 @@ body {
         "side footer";
 
     }
-
-    .sidebar {
-        position: fixed;
-    }
-
 
 
     .about-text p{
