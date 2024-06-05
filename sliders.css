@@ -224,12 +224,9 @@ img.displaySlide{
 @media (max-width: 860px) {
 
     body {
+        overflow: hidden;
         grid-template-columns: 70px 1fr;
         grid-template-rows: 200px 1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
 
     }
 
@@ -304,12 +301,9 @@ img.displaySlide{
 @media  (max-width: 550px) {
 
     body {
+        overflow: hidden;
         grid-template-columns: 70px 1fr;
         grid-template-rows: 150px 1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
 
     }
 
@@ -350,7 +344,7 @@ img.displaySlide{
     }   
     
     .slider {
-        display: none; /* Gör slidern osynlig */
+        display: none; 
     }
 }
 
@@ -360,12 +354,10 @@ img.displaySlide{
 @media  only screen and (max-width: 400px) {
 
     body {
+       
         grid-template-columns: 70px 1fr;
         grid-template-rows:150px 1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
+
 
     }
 

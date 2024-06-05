@@ -16,6 +16,7 @@ body {
     "side header"
     "side main"
     "side footer";
+    overflow-x: hidden;
 
 }
 
@@ -39,7 +40,7 @@ body {
     width: 300px;
     min-height: 100%;
     transition: all .5s ease;
-    overflow: hidden;
+ 
 
 }
 
@@ -235,16 +236,15 @@ body {
     }
 
      .main {
-    
-    grid-template-columns:400px 1fr;
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas:
-    "c1"
-    "c2"
-    "c3"
-    "c4"
-    "c5"
-    "c6"; 
+        grid-template-columns:400px 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "c1"
+        "c2"
+        "c3"    
+        "c4"
+        "c5"
+        "c6"; 
 
     }   
 
@@ -316,7 +316,7 @@ body {
 
 @media  (max-width: 550px) {
     body {
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 150px 1fr ;
         grid-template-areas: 
         "side header"
@@ -326,7 +326,7 @@ body {
     }
 
     .main {
-        grid-template-columns:400px 1fr;
+        grid-template-columns:1fr;
         grid-template-rows: repeat(6,1fr);
         grid-template-areas: 
         "c1"
@@ -364,35 +364,30 @@ body {
     }
 
     .card:hover {
-        transform: none;
-         
-        
+        transform: none;   
     }
 
     .footer-text {
         margin-left: 70px;
         gap: 30px;
     }
-
 }
 
 
 @media  only screen and (max-width: 400px) {
 
     body {
-        grid-template-columns: 70px 1fr;
-        grid-template-rows:auto 1fr auto;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
         grid-template-areas: 
         "side header"
         "side main"
         "side footer";
-
     }
 
     .main {
-        padding: 55px 30px;
-        grid-template-columns:250px 1fr;
-        grid-template-rows: repeat(6,350px);
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6,auto-fill);
         grid-template-areas:
         "c1"
         "c2"
