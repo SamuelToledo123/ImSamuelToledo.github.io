@@ -236,6 +236,7 @@ body {
     }
 
      .main {
+        padding-left: 30px;
         grid-template-columns:400px 1fr;
         grid-template-rows: repeat(6,1fr);
         grid-template-areas:
@@ -246,7 +247,8 @@ body {
         "c5"
         "c6"; 
 
-    }   
+    }
+   
 
     .sidebar{
         top: 0;
@@ -309,25 +311,22 @@ body {
         box-shadow: none;     
     }
 
+    .header-text {
+        padding: 100px 30px;
+    }
+    
+
 
 }
 
 
 
 @media  (max-width: 550px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 1fr ;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
-
-    }
+   
 
     .main {
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(6,1fr);
+        grid-template-columns:auto;
+        grid-template-rows: repeat(6,auto-fill);
         grid-template-areas: 
         "c1"
         "c2"
@@ -375,15 +374,6 @@ body {
 
 
 @media  only screen and (max-width: 400px) {
-
-    body {
-        grid-template-columns:1fr;
-        grid-template-rows:1fr;
-        grid-template-areas: 
-        "side header"
-        "side main"
-        "side footer";
-    }
 
     .main {
         grid-template-columns:1fr;
