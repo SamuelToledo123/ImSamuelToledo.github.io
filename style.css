@@ -136,20 +136,16 @@ body {
 }
 
 .gradient-container {
-    position: absolute;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    top: 200px;
-    left: 400px;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
 }
 
 
  .gradient {
-    width:75rem;
-    height: 40rem;
+    min-width:75rem;
+    min-height: 40rem;
     /* background-image: radial-gradient(rgb(243, 243, 243)25%, rgba(163, 171, 189, 0.473)50%, #222324 70%); */
     background-image: radial-gradient(rgb(162, 0, 255)15%,rgba(162, 0, 255, 0.733)35%, rgba(165, 10, 255, 0.692)30%, #222324 55%);
 
