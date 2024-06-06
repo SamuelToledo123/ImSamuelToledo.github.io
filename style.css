@@ -287,12 +287,12 @@ body {
    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
 
    .gradient {
-    width: 45rem;
+    width: 60rem;
     height: 35rem;
-    margin:250px 350px;
+    margin:250px 400px;
   }
 }
 
