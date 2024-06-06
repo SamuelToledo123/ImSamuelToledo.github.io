@@ -271,7 +271,7 @@ body {
  }
 
 
- /* @media (max-width: 1500px) {
+ @media (max-width: 1500px) {
 
     .main {
        grid-template-columns:repeat(3,1fr);
@@ -285,7 +285,7 @@ body {
    .gradient {
     margin: 250px 300px;
    }
-} */
+}
 
 
 
