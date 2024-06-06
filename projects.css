@@ -5,6 +5,11 @@
   
     
 }
+html {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 
 body {
     background: #181a1b;
