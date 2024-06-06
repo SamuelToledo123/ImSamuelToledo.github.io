@@ -29,7 +29,7 @@ body {
 
 }
 
-.footer {
+/* .footer {
     margin-top: auto;
     background-color:  #181a1b;
     grid-area: footer;
@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 40px;
-}
+} */
 
 
 .header {
@@ -136,12 +136,12 @@ body {
 }
 
  .gradient {
+    display: flex;
     width: 65rem;
     height: 40rem;
     margin:200px 500px;
     /* background-image: radial-gradient(rgb(243, 243, 243)25%, rgba(163, 171, 189, 0.473)50%, #222324 70%); */
     background-image: radial-gradient(rgb(162, 0, 255)20%,rgba(162, 0, 255, 0.733)30%, rgba(165, 10, 255, 0.692)20%, #222324 55%);
-    overflow: hidden;
 
 }
 
@@ -285,13 +285,6 @@ body {
    .gradient {
     margin: 250px 300px;
    }
-}
-
-@media (max-width: 1550px) {
-
-   .gradient {
-   display: none;
-  }
 }
 
 
