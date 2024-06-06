@@ -137,14 +137,15 @@ body {
 
 .gradient-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: main;
 }
 
 
  .gradient {
-    min-width:75rem;
-    min-height: 40rem;
-    /* background-image: radial-gradient(rgb(243, 243, 243)25%, rgba(163, 171, 189, 0.473)50%, #222324 70%); */
+    width: clamp(70rem, 50%, 140rem); 
+    height: clamp(35rem, 25%, 70rem); 
     background-image: radial-gradient(rgb(162, 0, 255)15%,rgba(162, 0, 255, 0.733)35%, rgba(165, 10, 255, 0.692)30%, #222324 55%);
 
 }
@@ -199,7 +200,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin: 0 30px;
+    margin: 30px;
 }
 
 .click-titel a{
@@ -262,10 +263,9 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: auto-fill;
         grid-template-areas:
-        "c3 c1"
-        "c5 c4"
-        "c2 c6"
-        "c7 c7";
+        "c1 c2 c3"
+        "c4 c5 c3"
+        "c6 c6 c7";
         gap: 20px;
     }
 
