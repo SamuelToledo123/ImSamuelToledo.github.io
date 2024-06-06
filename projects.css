@@ -34,7 +34,7 @@ body {
 .header-text {
     color: #f6f7f9;
     font-size: clamp(22px,6vw,30px);
-    padding: 50px 35px;
+    padding: 130px 35px;
 }
 
 .sidebar {
@@ -378,11 +378,10 @@ body {
         margin: 15px 15px;
 
     }
-       
-
- .header-text {
-        font-size: 20px;
-    }
+    
+    .header-text {
+    padding: 130px 35px;
+}
 
     .card:hover {
         transform: none;   
@@ -435,6 +434,9 @@ body {
     }
     .footer-text {
         display: none;
+    }
+    .header-text {
+        padding: 90px 35px;
     }
 
 }

@@ -1,6 +1,5 @@
 
 //slides
-
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -48,8 +47,6 @@ function nextSlide(){
 }
 
 //about scroll
-
-
 window.addEventListener('scroll', reveal);
 
 function reveal() {
@@ -69,25 +66,17 @@ function reveal() {
 }
 
 //cards
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    revealCard();
+    revealCard(); 
 });
+
+window.addEventListener('resize', revealCard);
 
 function revealCard() {
     var revealCards = document.querySelectorAll('.revealCard');
 
     revealCards.forEach(function(card) {
-        var windowheight = window.innerHeight;
-        var revealtop = card.getBoundingClientRect().top;
-        var revealpoint = 150;
-
-        if (revealtop < windowheight - revealpoint) {
-            card.classList.add('active');
-        } else {
-            card.classList.remove('active');
-        }
+        card.classList.add('active'); 
     });
 }
 

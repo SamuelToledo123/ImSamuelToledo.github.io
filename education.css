@@ -66,14 +66,13 @@ body {
     color: #f6f7f9;
     font-style: italic;
     font-size: clamp(22px,6vw,30px);
-    padding: 50px 35px;
+    padding: 130px 35px;
 }
 
 .sidebar {
     position: fixed;
     background: #181a1b;
     grid-area: side;
-    /* left: -240px; */
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
@@ -81,13 +80,9 @@ body {
 }
 
 .sidebar-image {
-
     margin-top: 85px;
     margin-left: 95px; 
-    /* margin-top: 55px; */
-    /* margin-left: 70px; */
     max-height: 110px;
-    /* max-height: 150px; */
     background-image: linear-gradient(rgba(162, 0, 255, 0.733)30%, rgba(165, 10, 255, 0.692)20%, #222324 80%);
     width: auto;
     border-radius: 50%;
@@ -155,7 +150,7 @@ body {
 .container {
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
  
@@ -166,8 +161,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 600px;
     margin: 10px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background-color: #181a1b;
@@ -182,10 +177,7 @@ body {
     transition: all 0.5s ease;
 }
 
-.container .card:hover {
-    width: 400px;
-    height: 600px;
-}
+
 .container .card .imglogo {
     position: absolute;
     top: 20px;
@@ -383,6 +375,9 @@ body {
     .container .card:hover .content {
         top: 100px;
         height: 100%;
+    }
+    .header-text {
+        padding: 100px 35px;
     }
 }
 
