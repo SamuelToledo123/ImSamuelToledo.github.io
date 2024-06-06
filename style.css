@@ -7,7 +7,8 @@
 }
 html {
     height: 100vh;
-    overflow-x: hidden;
+
+
 }
 
 
@@ -378,6 +379,11 @@ body {
 
 
 @media  (max-width: 550px) {
+
+    html {  
+        overflow-x: hidden;
+    
+    }
 
 
     .wrapper .icon {
