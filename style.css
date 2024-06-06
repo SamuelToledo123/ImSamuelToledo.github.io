@@ -1,6 +1,5 @@
-* ,
-*:before,
-*::after{
+* {
+
     font-family:'Roboto',system-ui, sans-serif;
     margin: 0;
     padding: 0;
@@ -288,12 +287,12 @@ body {
    }
 }
 
-@media (max-width: 1200) {
+@media (max-width: 1200px) {
 
    .gradient {
     width: 45rem;
-    height: 10rem;
-    margin:200px 500px;
+    height: 35rem;
+    margin:250px 350px;
   }
 }
 
