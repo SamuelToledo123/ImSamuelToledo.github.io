@@ -6,7 +6,8 @@
 
 }
 html {
-    height: 100vh;
+    min-height: 100%;
+  
 
 
 }
@@ -70,6 +71,7 @@ body {
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
+   
 }
 
 .sidebar-image {
@@ -268,6 +270,23 @@ body {
  }
 
 
+ @media (max-width: 1500px) {
+
+    .main {
+       grid-template-columns:repeat(3,1fr);
+       grid-template-rows: repeat(3,1fr);
+       grid-template-areas:
+       "c1 c2 c3"
+       "c4 c5 c3"
+       "c6 c6 c7";
+
+   }
+   .gradient {
+    margin: 250px 300px;
+   }
+}
+
+
 @media (max-width: 860px) {
     body {
         grid-template-columns:70px 1fr;
@@ -401,7 +420,7 @@ body {
  
     .main {
         grid-template-columns:1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: repeat(6,1fr) 0.5fr;
         grid-template-areas:
         "c3"
         "c1"

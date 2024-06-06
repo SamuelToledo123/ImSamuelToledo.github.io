@@ -232,6 +232,23 @@ body {
     
 }
 
+
+@media (max-width: 1500px) {
+
+    .main {
+       grid-template-columns:repeat(2,auto);
+       grid-template-rows: repeat(3,auto-fill);
+       grid-template-areas:
+       "c1 c2"
+       "c3 c4"
+       "c5 c6"; 
+
+   }
+
+}
+
+
+
 @media (max-width: 860px) {
 
     body {
@@ -330,8 +347,8 @@ body {
    
 
     .main {
-        grid-template-columns:auto;
-        grid-template-rows: repeat(6,auto-fill);
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6,1fr);
         grid-template-areas: 
         "c1"
         "c2"
