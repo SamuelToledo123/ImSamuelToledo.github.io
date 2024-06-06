@@ -290,9 +290,7 @@ body {
 @media (max-width: 1550px) {
 
    .gradient {
-    width: 60rem;
-    height: 25rem;
-    margin:250px 400px;
+   display: none;
   }
 }
 
