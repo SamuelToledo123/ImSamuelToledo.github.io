@@ -137,15 +137,15 @@ body {
 
 .gradient-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     grid-area: main;
 }
 
 
  .gradient {
-    width: clamp(70rem, 50%, 140rem); 
-    height: clamp(35rem, 25%, 70rem); 
+    width: clamp(80rem, 50%, 140rem); 
+    height: clamp(45rem, 25%, 70rem); 
     background-image: radial-gradient(rgb(162, 0, 255)15%,rgba(162, 0, 255, 0.733)35%, rgba(165, 10, 255, 0.692)30%, #222324 55%);
 
 }
@@ -157,8 +157,8 @@ body {
     padding: 75px 35px;
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(2,300px)600px;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,300px)500px;
+    grid-template-rows: repeat(3,200px);
     grid-template-areas:
     "c1 c2 c3"
     "c4 c5 c3"
@@ -216,6 +216,10 @@ body {
 }
 .card p {
     color:  rgba(255, 255, 255, 0.555);
+
+}
+.card-description {
+    margin: 30px;
 
 }
 
