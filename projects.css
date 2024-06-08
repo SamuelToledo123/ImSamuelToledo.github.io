@@ -152,20 +152,16 @@ body {
 
 .card {
     /* height: 400px; */
-    color: white;
+    color: #f6f7f9;
     background:  #181a1b;
     border-radius: 10px;
     box-shadow: 0 3px 5px #000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.24);
-    text-decoration: none;  
-    
+    text-decoration: none;   
 }
 
-.card:hover {
-    transform: scale(1.1);
-    box-shadow: 25px 0 25px rgba(0, 0, 0, 0.5), -25px 0 25px rgba(0, 0, 0, 0.5);     
-}
+
 
 /* .card:hover .card-image {
     filter: grayscale(0%);
@@ -228,6 +224,11 @@ body {
     border: 1px solid #e4e4e457;
     border-radius: 5px;
     
+}
+
+.fa {
+    color: #f6f7f9;
+    margin-left: 5px;
 }
 
 
@@ -326,11 +327,6 @@ body {
 
     }
 
-    .card:hover {
-        transform: none;
-        box-shadow: none;     
-    }
-
     .header-text {
         padding: 100px 30px;
     }
@@ -416,11 +412,8 @@ body {
   
     .sidebar img{
         visibility: hidden;
- }    
-    .card:hover {
-        transform: none;
-        box-shadow: none;     
-    }
+    }    
+
 
     .card-image {
         transition: none;       
