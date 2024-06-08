@@ -19,6 +19,7 @@ body {
     "side header"
     "side main"
     "side footer";
+    overflow-x: hidden;
 }
 
 .footer {

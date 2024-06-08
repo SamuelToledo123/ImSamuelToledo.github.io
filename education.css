@@ -5,7 +5,7 @@
     
 }
 html {
-    height: 100vh;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -20,6 +20,7 @@ body {
     "side header"
     "side main"
     "side footer";
+    overflow-x: hidden;
 
 }
 
