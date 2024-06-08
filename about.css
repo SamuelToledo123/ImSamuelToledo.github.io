@@ -265,10 +265,6 @@ section .cards .text-card h3{
 
 
 
-/* .about-me {
-     width: 100%;
-  
-} */
 
 /* .about-me img {
     border: 2px solid #f30a0a;
@@ -411,8 +407,12 @@ section .cards .text-card h3{
     }
 
     .button {
-        margin-left: 60px;
+        margin-left: 65px;
       
+    }
+
+    .about-text p{
+        width: 100%;
     }
     
     
@@ -426,14 +426,16 @@ section .cards .text-card h3{
 
 @media  only screen and (max-width: 400px) {
 
-
-
-
     section .cards .text-card {
         margin: 10px;
         padding: 10px;
        
     }    
+
+    .button {
+        margin-left: 25px;
+      
+    }
 
 }
 
