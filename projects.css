@@ -45,12 +45,10 @@ body {
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
- 
-
+    overflow: hidden; 
 }
 
 .sidebar-image {
-
     margin-top: 85px;
     margin-left: 95px; 
     /* margin-top: 55px; */

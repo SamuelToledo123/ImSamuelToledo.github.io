@@ -209,7 +209,8 @@ section .cards .text-card h3{
     /* left: -240px; */
     width: 300px;
     min-height: 100%;
-    transition: all .5s ease;   
+    transition: all .5s ease;  
+    overflow: hidden; 
 }
 
 .sidebar-image {

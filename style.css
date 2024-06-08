@@ -71,6 +71,7 @@ body {
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
+    overflow: hidden; 
    
 }
 
@@ -78,6 +79,7 @@ body {
     margin-top: 85px;
     margin-left: 95px; 
     max-height: 110px;
+    /* background-image: linear-gradient(rgba(219, 213, 223, 0.733)30%, rgba(227, 223, 230, 0.692)20%, #222324 80%); */
     background-image: linear-gradient(rgba(162, 0, 255, 0.733)30%, rgba(165, 10, 255, 0.692)20%, #222324 80%);
     width: auto;
     border-radius: 50%;
@@ -104,7 +106,6 @@ body {
     padding-left:30px;
     border-bottom: 1px solid rgba(255,255,255,.1);
     border-top: 1px solid black;
-    border-left: 5px solid red solid transparent;
     box-sizing: border-box;
     text-decoration-line: none;
 }
@@ -143,6 +144,7 @@ body {
  .gradient {
     width: clamp(80rem, 50%, 140rem); 
     height: clamp(45rem, 25%, 70rem); 
+    /* background-image: radial-gradient(rgb(224, 217, 228)15%,rgba(206, 201, 209, 0.733)35%, rgba(217, 209, 221, 0.692)30%, #222324 55%); */
     background-image: radial-gradient(rgb(162, 0, 255)15%,rgba(162, 0, 255, 0.733)35%, rgba(165, 10, 255, 0.692)30%, #222324 55%);
 
 }
@@ -245,6 +247,7 @@ body {
   }
     
 .card-icons a> :hover {
+    /* text-shadow: 0 0 10px #d9d0db; */
     text-shadow: 0 0 10px #a607d6;
     filter: dropshadow(color=#000000, offx=2, offy=2);
     transform: translateY(-10px);

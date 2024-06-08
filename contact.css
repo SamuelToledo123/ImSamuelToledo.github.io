@@ -63,11 +63,11 @@ body {
     position: fixed;
     background: #181a1b;
     grid-area: side;
-  
     /* left: -240px; */
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
+    overflow: hidden; 
 
 }
 
