@@ -107,11 +107,7 @@ body {
     width: 100%;
     line-height: 65px;
     padding-top: 0px;
-    padding-left:60px;
     padding-left:30px;
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    border-top: 1px solid black;
-    border-left: 5px solid red solid transparent;
     box-sizing: border-box;
     text-decoration-line: none;
 }
@@ -145,7 +141,7 @@ body {
     display: grid;
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;   
+    justify-content: start;   
 }
 
 
@@ -245,7 +241,7 @@ body {
 @media (max-width: 860px) {
 
     body {
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 50px 1fr;
         grid-template-rows: 200px 1fr;
 
     }

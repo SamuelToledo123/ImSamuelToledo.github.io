@@ -79,14 +79,14 @@ section {
     justify-content: start;
     align-items: start;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 70px;
   
 }
 
 
 .button a {
     position: relative;
-    color: #6b6a6a;
+    color: #f6f7f9;
     text-decoration: none;
     text-transform: uppercase;
     font-size: clamp(20px,8vw,30px);
@@ -99,10 +99,10 @@ section {
 }
 
 .button a:hover {
-    background: #f30a0a;
-    color: #f30a0a;
+    background: #0313ec;
+    color: #0313ec;
     letter-spacing: 5px;
-    box-shadow: 0 0 35px #f30a0a9c;
+    box-shadow: 0 0 35px #0313ec;
 }
 
 .button a:before {
@@ -129,12 +129,6 @@ section h1 {
     margin-bottom: 10px;   
 }
 
-.container-2 {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    text-align: start;
-}
 
 
 .text-card span {
@@ -143,8 +137,8 @@ section h1 {
     font-size: 20px;
     padding: 10px;
     background: #181a1b;
-    box-shadow: 0 0 35px #f30a0a9c;
-    border: 2px solid #f30a0a;
+    box-shadow: 0 0 35px #0313ec;
+    border: 2px solid #0313ec;
     margin: 5px;
     border-radius: 10px;
 }
@@ -167,7 +161,7 @@ section .cards .text-card h3{
 }
 .reveal {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateY(200px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -231,11 +225,7 @@ section .cards .text-card h3{
     width: 100%;
     line-height: 65px;
     padding-top: 0px;
-    padding-left:60px;
     padding-left:30px;
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    border-top: 1px solid black;
-    border-left: 5px solid red solid transparent;
     box-sizing: border-box;
     text-decoration-line: none;
 }
@@ -276,8 +266,7 @@ section .cards .text-card h3{
 
 
 .dev {
-    color: #f30a0a;
-    /* color: #a90af3; */
+    color: #0817f5;
 }
 
 .stack {
@@ -286,25 +275,12 @@ section .cards .text-card h3{
   
 }
 
-/* .stack {
-    color: #0a35f3;
-  
-} */
-
 .about-text p{
-    width: 70%;
+    width: 75%;
     color: #f6f7f9;
-    font-size: clamp(10px ,5vw, 22px);
-    text-transform: 25px;
-   
+    font-size: clamp(15px ,5vw, 22px);
+    text-transform: 25px; 
 }
-
-
-
-
-
-
-
 
 @media (max-width: 860px) {
 
@@ -388,7 +364,7 @@ section .cards .text-card h3{
 @media  (max-width: 550px) {
 
     body {
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 50px 1fr;
         grid-template-rows: 150px 1fr;
     }
  
@@ -433,7 +409,7 @@ section .cards .text-card h3{
     }    
 
     .button {
-        margin-left: 25px;
+        margin-left: 30px;
       
     }
 
