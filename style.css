@@ -340,19 +340,6 @@ body {
 
     }
 
-    .revealCard {
-        transform: none;
-        opacity: 1;
-        transition: none;
-    }
-
-    .revealCard.active {
-        transform: none;
-        opacity: 1;
-        transition: none;
-    }
-
-   
 
 }
 
