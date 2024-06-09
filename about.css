@@ -161,7 +161,7 @@ section .cards .text-card h3{
 }
 .reveal {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -278,7 +278,7 @@ section .cards .text-card h3{
 .about-text p{
     width: 75%;
     color: #f6f7f9;
-    font-size: clamp(15px ,5vw, 22px);
+    font-size: clamp(18px ,5vw, 22px);
     text-transform: 25px; 
 }
 
@@ -356,6 +356,14 @@ section .cards .text-card h3{
        
     }
 
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+    }
 
 }
 
@@ -382,10 +390,6 @@ section .cards .text-card h3{
         padding: 90px 35px;
     }
 
-    .button {
-        margin-left: 65px;
-      
-    }
 
     .about-text p{
         width: 100%;
@@ -402,16 +406,20 @@ section .cards .text-card h3{
 
 @media  only screen and (max-width: 400px) {
 
+    body {
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: 100px 1fr;
+   
+    }
+
     section .cards .text-card {
         margin: 10px;
         padding: 10px;
        
     }    
 
-    .button {
-        margin-left: 30px;
-      
-    }
-
 }
+
+
+
 

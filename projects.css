@@ -41,7 +41,6 @@ body {
     position: fixed;
     background: #181a1b;
     grid-area: side;
-    /* left: -240px; */
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
@@ -326,6 +325,9 @@ body {
 
 
 @media  (max-width: 550px) {
+
+ 
+
    
 
     .main {
@@ -378,6 +380,12 @@ body {
 
 @media  only screen and (max-width: 400px) {
 
+    body {
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 110px 1fr;
+ 
+    }
+
     .main {
         grid-template-columns:1fr;
         grid-template-rows: repeat(6,auto-fill);
@@ -391,12 +399,7 @@ body {
     
         }   
 
-    .header {
-        grid-area: header;
-        display: flex;
  
-    }
-    
   
     .sidebar img{
         visibility: hidden;
@@ -415,7 +418,7 @@ body {
         display: none;
     }
     .header-text {
-        padding: 95px 35px;
+        padding: 55px 35px;
     }
 
 }

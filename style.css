@@ -339,6 +339,11 @@ body {
 
 
     }
+    .card-icons {
+        font-size: 45px;
+        gap: 50px;
+        
+    }
 
 
 }
@@ -346,6 +351,12 @@ body {
 
 
 @media  (max-width: 550px) {
+
+    body {
+        grid-template-columns:50px 1fr;
+        grid-template-rows: 220px 1fr;
+
+    }
 
     html {  
         overflow-x: hidden;
@@ -394,6 +405,16 @@ body {
 
 
 @media  only screen and (max-width: 400px) {
+
+    body {
+        grid-template-rows: 100px 1fr;
+
+    }
+
+    .header-text {
+        padding: 25px 35px;
+    }
+
     
     .main {
         grid-template-columns:1fr;
