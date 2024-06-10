@@ -295,7 +295,6 @@ section .cards .text-card h3{
         width: 70px;
         left: 0;
         margin: auto;
-        z-index: 10;
     }
 
     .sidebar-image  {

@@ -353,7 +353,7 @@ body {
 @media  (max-width: 550px) {
 
     body {
-        grid-template-columns:70px 1fr;
+        grid-template-columns:50px 1fr;
         grid-template-rows: 220px 1fr;
 
     }
@@ -407,12 +407,12 @@ body {
 @media  only screen and (max-width: 400px) {
 
     body {
-        grid-template-rows: 100px 1fr;
+        grid-template-rows: 150px 1fr;
 
     }
 
     .header-text {
-        padding: 5px 35px;
+        padding: 70px 35px;
     }
 
     
