@@ -238,7 +238,7 @@ body {
 @media (max-width: 860px) {
 
     body {
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-rows: 200px 1fr;
  
     }
@@ -381,7 +381,7 @@ body {
 @media  only screen and (max-width: 400px) {
 
     body {
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-rows: 110px 1fr;
  
     }
@@ -418,7 +418,7 @@ body {
         display: none;
     }
     .header-text {
-        padding: 55px 35px;
+        padding: 5px 35px;
     }
 
 }

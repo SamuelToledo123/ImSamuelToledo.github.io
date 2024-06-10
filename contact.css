@@ -12,6 +12,7 @@ html {
 
 
 body {
+    margin: 0;
     background: #222324;
     min-height:100vh;
     display: grid;

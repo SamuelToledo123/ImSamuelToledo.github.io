@@ -372,7 +372,7 @@ section .cards .text-card h3{
 @media  (max-width: 550px) {
 
     body {
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-rows: 150px 1fr;
     }
  
@@ -394,13 +394,22 @@ section .cards .text-card h3{
     .about-text p{
         width: 100%;
     }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    
+    .reveal.active {
+        transform: none;
+        opacity: 1;
+    }
     
     
    
 }
 
-
-  
 
 
 
@@ -417,6 +426,8 @@ section .cards .text-card h3{
         padding: 10px;
        
     }    
+
+    
 
 }
 
