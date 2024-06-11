@@ -233,7 +233,7 @@ body {
 
 .card-icons {
     display: flex;
-    font-size: 50px;
+    font-size: 45px;
     gap: 70px;
         
 }
@@ -352,11 +352,7 @@ body {
 
 @media  (max-width: 550px) {
 
-    body {
-        grid-template-columns:50px 1fr;
-        grid-template-rows: 220px 1fr;
-
-    }
+ 
 
     html {  
         overflow-x: hidden;
@@ -386,9 +382,9 @@ body {
         gap: 20px;
     }
 
-    .header-text {
+    /* .header-text {
         padding: 150px 35px;
-    }
+    } */
 
     .card-icons {
         font-size: 35px;
@@ -406,10 +402,7 @@ body {
 
 @media  only screen and (max-width: 400px) {
 
-    body {
-        grid-template-rows: 150px 1fr;
 
-    }
 
     .header-text {
         padding: 70px 35px;

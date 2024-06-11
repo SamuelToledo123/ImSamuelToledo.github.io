@@ -208,7 +208,7 @@ body {
     @media (max-width: 860px) {
 
         body {
-            grid-template-columns: 50px 1fr;
+            grid-template-columns: 70px 1fr;
             grid-template-rows: 200px 1fr;
      
         }
@@ -326,9 +326,6 @@ body {
         
     }
 
-    .header-text {
-        padding: 80px 30px;
-    }
     
 
 }
@@ -352,6 +349,10 @@ body {
     .footer-text {
         margin-left: 25px;
         gap: 20px;
+    }
+
+    .header-text {
+        padding: 70px 35px;
     }
 
 }

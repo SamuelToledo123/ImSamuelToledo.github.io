@@ -313,10 +313,6 @@ body {
 
 @media  (max-width: 550px) {
 
-    body {
-        grid-template-columns: 70px 1fr;
-        grid-template-rows: 150px 1fr;
-    }
 
     .header-text {
         font-size: 21px;
@@ -391,10 +387,7 @@ body {
 
 @media (max-width: 400px) {
 
-    body {
-        grid-template-columns: 70px 1fr;
-        grid-template-rows: 150px 1fr;
-    }
+ 
 
     section .cards {
         flex-direction: column;
