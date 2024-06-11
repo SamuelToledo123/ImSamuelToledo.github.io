@@ -377,8 +377,8 @@ section .cards .text-card h3{
 @media  (max-width: 550px) {
 
     body {
-        grid-template-columns: 50px 1fr;
-        grid-template-rows: 150px 1fr;
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: auto-fill;
  
     }
    

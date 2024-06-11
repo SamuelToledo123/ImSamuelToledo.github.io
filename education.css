@@ -313,13 +313,16 @@ body {
 
 @media  (max-width: 550px) {
 
+    body {
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: auto-fill;
 
-    .header-text {
-        font-size: 21px;
     }
 
+    .header-text {
+        padding: 70px 35px;
+    }
 
- 
     .about-me {
         width: 100%;
     
@@ -370,9 +373,7 @@ body {
         top: 100px;
         height: 100%;
     }
-    .header-text {
-        padding: 100px 35px;
-    }
+ 
 }
 
 
