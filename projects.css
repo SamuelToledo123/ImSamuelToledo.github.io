@@ -35,7 +35,7 @@ body {
 }
 .header-text {
     color: #f6f7f9;
-    font-size: clamp(20px,6vw,30px);
+    font-size: clamp(25px,6vw,30px);
     padding: 130px 35px;
 }
 
@@ -194,6 +194,7 @@ body {
 .main span {
     margin: 3px;
     padding: 5px;
+    font-size: clamp(10px,3vw,16px);
     border: 1px solid #e4e4e457;
     border-radius: 5px;
     
@@ -231,16 +232,14 @@ body {
     }
 
      .main {
-        padding-left: 30px;
         grid-template-columns:400px 1fr;
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: auto-fill;
         grid-template-areas:
         "c1"
         "c2"
         "c3"    
         "c4"
-        "c5"
-        "c6"; 
+        "c5"; 
 
     }
    
@@ -315,14 +314,14 @@ body {
 
     body {
         grid-template-columns: 60px 1fr;
-        grid-template-rows: auto-fill;
+        grid-template-rows: auto;
  
     }
 
     .main {
         padding: 20px 35px;
         grid-template-columns:1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: auto-fill;
         grid-template-areas: 
         "c1"
         "c2"
@@ -332,10 +331,8 @@ body {
 
     }    
 
-
-    .header {
-        grid-area: header;
-        display: flex;
+    .header-text {
+       padding: 20px 35px;
     }
 
 
@@ -365,22 +362,21 @@ body {
 
 @media  only screen and (max-width: 400px) {
 
- 
 
     .main {
         padding: 20px 35px;
         grid-template-columns:1fr;
-        grid-template-rows: repeat(5,1fr);
-        grid-template-areas:
+        grid-template-rows: auto-fill;
+        grid-template-areas: 
         "c1"
         "c2"
         "c3"
         "c4"
         "c5"; 
-    
-        }   
 
- 
+    }   
+
+
   
     .sidebar img{
         visibility: hidden;
@@ -391,15 +387,13 @@ body {
         transition: none;       
     }
 
-    .text-card h4{
+     .text-card h4{
         display: none;
       
     }
     .footer-text {
         display: none;
     }
-    .header-text {
-        padding: 100px 35px;
-    }
+ 
 
 }

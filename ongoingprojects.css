@@ -305,7 +305,7 @@ body {
 
     body {
         grid-template-columns: 60px 1fr;
-        grid-template-rows: auto-fill;
+        grid-template-rows: auto;
  
     }
 
@@ -330,7 +330,7 @@ body {
     }
 
     .header-text {
-        padding: 80px 35px;
+        padding: 20px 35px;
     }
 
     
