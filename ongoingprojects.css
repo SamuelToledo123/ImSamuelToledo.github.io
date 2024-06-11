@@ -297,6 +297,12 @@ body {
 
 @media  (max-width: 550px) {
 
+    body {
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 150px 1fr;
+ 
+    }
+
 
     .header {
         grid-area: header;
