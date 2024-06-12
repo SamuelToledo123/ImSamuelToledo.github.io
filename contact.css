@@ -159,7 +159,7 @@ nav ul li .link span{
     display: block;
     font-weight: 400;
     z-index: 10;
-    mix-blend-mode: difference;
+
     border: 1px solid #d6cbdb; 
     border-radius: 10px;
     padding: 10px;
@@ -176,7 +176,7 @@ nav ul li .link span:hover{
 }
 
 nav ul li .link > img{
-    mix-blend-mode: difference;
+    
     z-index: 10;
 }
 .hover-reveal {
