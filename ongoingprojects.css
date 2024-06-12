@@ -131,14 +131,14 @@ body {
     grid-template-rows: repeat(1,450px);
     grid-template-areas:
     "c1 c2"; 
-    gap: 35px;
+    gap: 30px;
 
     
 }
 
 
 .card {
-    margin-top: 45px;
+    margin-top: 10px;
     /* height: 400px; */
     color: white;
     background:  #181a1b;
@@ -304,7 +304,7 @@ body {
     
 
     body {
-        grid-template-columns: 60px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-rows: auto;
  
     }
@@ -353,11 +353,7 @@ body {
         display: none;
       
     }
-    .footer-text {
-        margin-left: 25px;
-        gap: 20px;
-    }
-
+    
 
 }
 
