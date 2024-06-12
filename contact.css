@@ -142,7 +142,7 @@ nav {
     margin-left: 40px;
 }
 nav ul {
-    width: 50%;
+    width: 0%;
 }
 nav ul li {
     position: relative;
@@ -166,7 +166,7 @@ nav ul li .link span{
     display: inline-block;
     position: relative;
     color: #fff;
-    font-size: 2rem;
+    font-size: clamp(1rem,8vw,2rem);
 
 }
 
@@ -278,15 +278,8 @@ nav ul li .link > img{
         transform: none;
         transition: none;
     }
-    nav ul {
-        width: 93%;
-    }
-    nav ul li .link span {
-        font-size: 2.5rem;
-    }
-    nav ul li .link > img {
-        height: 18px;
-    }
+
+
     .hover-reveal {
         width: 100px;
         height: 100px;
