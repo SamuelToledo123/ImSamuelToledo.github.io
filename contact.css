@@ -9,8 +9,6 @@ html {
     overflow-x: hidden;
 }
 
-
-
 body {
     margin: 0;
     background: #222324;
@@ -50,7 +48,7 @@ body {
     background-color: #222324;
     grid-area: header;
     display: flex;
-    justify-content: center;
+ 
     
  
 }
@@ -58,7 +56,7 @@ body {
     color: #f6f7f9;
     font-style: italic;
     font-size: clamp(22px,6vw,30px);
-    padding: 130px 0px;
+    padding: 130px 35px;
 }
 
 .sidebar {
@@ -130,111 +128,80 @@ body {
 
 }
 
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-  
-    z-index: 1;    
-}
-.card {
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.925),rgba(255, 255, 255, 0.4));
-    /* background: rgba(255, 255, 255, 0.377); */
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 1;
-
-}
-
-.card:nth-child(1) {
-    background: linear-gradient(45deg, rgba(20, 252, 51, 0.856),rgba(5, 21, 241, 0.4));
-    border-top: 1px solid rgb(27, 80, 255);
-    border-left: 1px solid rgb(27, 255, 57);
-  
-}
-
-.card:nth-child(2) {
-    background: linear-gradient(45deg, rgba(20, 74, 252, 0.856),rgba(5, 241, 221, 0.4));
-    border-top: 1px solid rgba(27, 80, 255, 0.808);
-    border-left: 1px solid rgba(27, 80, 255, 0.808);
- 
-}
-
-.card:nth-child(3) {
-    background: linear-gradient(45deg, rgba(252, 16, 48, 0.849),rgba(194, 5, 241, 0.925));
-    border-top: 1px solid rgba(202, 27, 255, 0.808);
-    border-left: 1px solid rgba(255, 27, 57, 0.521);
-  
-}
-
-.card:nth-child(4) {
-    background: linear-gradient(45deg, rgba(36, 252, 16, 0.849),rgba(241, 206, 5, 0.925));
-    border-top: 1px solid rgba(80, 255, 27, 0.493);
-    border-left: 1px solid rgba(255, 251, 27, 0.425);
-  
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    transition:all 0.5s ease ;
-}
-
-
-.container .card .content {
-    padding: 20px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.container .card .content h2 {
-  position: absolute;
-  top: 5px;
-  right: 30px;
-  height: 100px;
-  font-size: 4em;
-  color: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
-}
-
-
-.container .card .content h3 {
-    font-size: 1.8em;
-    color: #fff;
-    z-index: 1;
-  }
-
-  .container .card .content p {
-    font-size: 1;
-    color: #fff;
-    font-weight: 300;
-  }
-
-  .container .card .content a {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    color: #defeff;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+a,a:visited, a:hover {
     text-decoration: none;
+}
 
-  }
+li {
+    list-style: none;
+}
+nav {
+    overflow: hidden;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+nav ul {
+    width: 50%;
+}
+nav ul li {
+    position: relative;
+    z-index: 10;
+}
+nav ul li .link {
+    display: flex;
+    padding: 20px 0 20px 0;
+    z-index: 10;
+    justify-content: space-between;
+}
+nav ul li .link span{
+    margin-top: 20px;
+    display: block;
+    font-weight: 400;
+    z-index: 10;
+    mix-blend-mode: difference;
+    border: 1px solid #d6cbdb; 
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
 
- 
+}
+
+nav ul li .link span:hover{
+    background: linear-gradient(to right , rgba(162, 0, 255, 1), rgb(10, 1, 19));
+    transition: all 1s ease;
+}
+
+nav ul li .link > img{
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+.hover-reveal {
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-out;
+}
+.hover-reveal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
  
   
 @media (max-width: 860px) {
@@ -311,6 +278,19 @@ body {
         transform: none;
         transition: none;
     }
+    nav ul {
+        width: 93%;
+    }
+    nav ul li .link span {
+        font-size: 2.5rem;
+    }
+    nav ul li .link > img {
+        height: 18px;
+    }
+    .hover-reveal {
+        width: 100px;
+        height: 100px;
+    }
 }
     
 
@@ -340,7 +320,7 @@ body {
     }
 
     .header-text {
-        padding: 20px 0;
+        padding: 25px 35px;
     }
    
 }
@@ -356,12 +336,11 @@ body {
 
     .about-text p{
         width: 100%;
-    
        
     }
 
     .header-text {
-        padding: 50px 75px;
+        padding: 20px 35px;
     }
 
     
