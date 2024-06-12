@@ -54,7 +54,6 @@ body {
 }
 .header-text {
     color: #f6f7f9;
-    font-style: italic;
     font-size: clamp(22px,6vw,30px);
     padding: 130px 35px;
 }
@@ -152,18 +151,17 @@ nav ul li .link {
     display: flex;
     padding: 20px 0 20px 0;
     z-index: 10;
-    justify-content: space-between;
+    justify-content: start;
 }
 nav ul li .link span{
     margin-top: 20px;
     display: block;
     font-weight: 400;
     z-index: 10;
-
+    mix-blend-mode: difference;
     border: 1px solid #d6cbdb; 
     border-radius: 10px;
     padding: 10px;
-    display: inline-block;
     position: relative;
     color: #fff;
     font-size: clamp(1rem,8vw,2rem);
@@ -176,7 +174,7 @@ nav ul li .link span:hover{
 }
 
 nav ul li .link > img{
-    
+    mix-blend-mode: difference;
     z-index: 10;
 }
 .hover-reveal {
@@ -221,16 +219,7 @@ nav ul li .link > img{
 
     .sidebar-image  {
        visibility: hidden;
-
     }
-
-    /* .sidebar-image  {
-        margin: 10px 10px;
-        height: 50px;
-        border: #000;
-
-    } */
-
 
     .sidebar header,#btn,#cancel {
         display: none;
@@ -264,26 +253,6 @@ nav ul li .link > img{
 
     }
 
-    section .cards {
-        flex-direction: column;
-    }
-
-    section .cards .text-card {
-        margin: 20px;
-        padding: 30px;
-       
-    }
-
-    .card:hover {
-        transform: none;
-        transition: none;
-    }
-
-
-    .hover-reveal {
-        width: 100px;
-        height: 100px;
-    }
 }
     
 
