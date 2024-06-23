@@ -11,6 +11,7 @@ html {
 
 
 body {
+    background: #222324;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -51,7 +52,8 @@ body {
 .header-text {
     color: #f6f7f9;
     font-size: clamp(22px,6vw,30px);
-    padding: 130px 35px;
+    padding-top: 130px;
+    padding-left: 35px;
 }
 
 
@@ -154,8 +156,6 @@ body {
     height: 300px;
     margin-bottom: 15px;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     transition: filter 0.3s ease;
     
@@ -172,7 +172,7 @@ body {
 
 
 .image-1 {
-    background-image: url(images/valorant-305kescxw5dpup7y.jpg);
+    background-image: url(images/Bank\ app.png);
   
     
 }
@@ -188,6 +188,7 @@ body {
     padding: 50px 35px;
     text-align: center;
     font-size: 22px;
+    
 }
 .text-card {
     display: flex;
@@ -206,7 +207,7 @@ body {
     @media (max-width: 860px) {
 
         body {
-            grid-template-columns: 70px 1fr;
+            grid-template-columns: 0px 1fr;
             grid-template-rows: 200px 1fr;
      
         }
@@ -221,12 +222,12 @@ body {
        
     
         .sidebar{
-            top: 0;
-            position: fixed;
-            height: 100%;
-            width: 70px;
-            left: 0;
+            width: 0px;
             margin: auto;
+            min-height: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            z-index: 2;
         }
     
         .sidebar-image  {
@@ -234,17 +235,46 @@ body {
     
         }
     
-    
-    
-        /* .sidebar-image  {
-            margin: 10px 10px;
+        #check {
+            display: none;  
+        }
+        label #btn, label #cancel {
+            position: fixed;
+            cursor: pointer;
+            background: #181a1b;
             height: 50px;
-            border: #000;
+            width: 50px;
+            text-align: center;
+            line-height: 45px;
+            color: white;
+            font-size: 30px;
+            border-radius: 5px;
+            margin: 15px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all .5s ease;
+            z-index: 10;
+        }
+        
+        label #cancel {
+            opacity: 0;
+            visibility: hidden;
+        }
+        #check:checked ~ label #btn {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #check:checked ~ label #cancel {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #check:checked ~ .sidebar {
+            width: 70px;
+        }
+        
     
-        } */
-    
-    
-        .sidebar header,#btn,#cancel {
+        .sidebar header {
             display: none;
         }
     
@@ -262,12 +292,12 @@ body {
     
         }
     
-        .sidebar a:hover {
-            width: 200px;
-            background: inherit;
-    
+        .sidebar a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid black;
     
         }
+    
     
         .sidebar a:hover span{
             opacity: 1;
@@ -280,12 +310,11 @@ body {
             transform: none;
             box-shadow: none;     
         }
-    
-        .header-text {
-            padding: 100px 30px;
+
+        .footer {
+            display: none;
         }
-        
-    
+
     
     }
     
@@ -302,7 +331,7 @@ body {
     
 
     body {
-        grid-template-columns: 70px 1fr;
+
         grid-template-rows: auto;
  
     }
@@ -328,8 +357,12 @@ body {
     }
 
     .header-text {
-        padding: 20px 35px;
-    }
+        padding-top: 100px;
+        padding-left: 35px;
+        padding-bottom: 50px;
+     }
+
+
 
     
 

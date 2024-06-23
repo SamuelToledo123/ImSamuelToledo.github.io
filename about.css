@@ -193,7 +193,8 @@ section .cards .text-card h3{
 .header-text {
     color: #f6f7f9;
     font-size: clamp(22px,6vw,30px);
-    padding: 130px 35px;
+    padding-top: 130px;
+    padding-left: 35px;
 }
 
 .sidebar {
@@ -294,16 +295,18 @@ section .cards .text-card h3{
 @media (max-width: 860px) {
 
     body {
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 0px 1fr;
         grid-template-rows: 200px 1fr;
    
     }
 
     .sidebar{
-        top: 0;
-        width: 70px;
-        left: 0;
+        width: 0px;
         margin: auto;
+        min-height: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        z-index: 2;
     }
 
     .sidebar-image  {
@@ -311,17 +314,46 @@ section .cards .text-card h3{
 
     }
 
-
-
-    /* .sidebar-image  {
-        margin: 10px 10px;
+    #check {
+        display: none;  
+    }
+    label #btn, label #cancel {
+        position: fixed;
+        cursor: pointer;
+        background: #181a1b;
         height: 50px;
-        border: #000;
+        width: 50px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 15px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all .5s ease;
+        z-index: 10;
+    }
+    
+    label #cancel {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    #check:checked ~ label #cancel {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    #check:checked ~ .sidebar {
+        width: 70px;
+    }
+    
 
-    } */
-
-
-    .sidebar header,#btn,#cancel {
+    .sidebar header {
         display: none;
     }
 
@@ -339,12 +371,12 @@ section .cards .text-card h3{
 
     }
 
-    .sidebar a:hover {
-        width: 200px;
-        background: inherit;
-
+    .sidebar a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid black;
 
     }
+
 
     .sidebar a:hover span{
         opacity: 1;
@@ -372,6 +404,9 @@ section .cards .text-card h3{
         text-align: center;
       
     }
+    .footer {
+        display: none;
+    }
 
 }
 
@@ -380,7 +415,6 @@ section .cards .text-card h3{
 @media  (max-width: 550px) {
 
     body {
-        grid-template-columns: 70px 1fr;
         grid-template-rows: auto;
  
     }
@@ -398,7 +432,9 @@ section .cards .text-card h3{
     }
 
      .header-text {
-        padding: 20px 35px;
+        padding-top: 100px;
+        padding-left: 35px;
+        padding-bottom: 20px;
     } 
 
 

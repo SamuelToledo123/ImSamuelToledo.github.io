@@ -17,7 +17,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     background: #181a1b;
-    /* background-color: #222324; */
     min-height: 100vh;
     display: grid;
     grid-template-columns:300px 1fr;
@@ -67,7 +66,6 @@ body {
     position: fixed;
     background: #181a1b;
     grid-area: side;
-    left: 0;
     width: 300px;
     min-height:100vh;
     transition: all .5s ease;
@@ -124,17 +122,13 @@ body {
     text-transform: uppercase;
 }
 
-.sidebar header  {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
 
 .gradient-container {
     display: flex;
     justify-content: start;
     align-items: center;
     grid-area: main;
+    border: 1px black;
 }
 
 
@@ -269,7 +263,7 @@ body {
 
 @media (max-width: 860px) {
     body {
-        grid-template-columns:70px 1fr;
+        grid-template-columns:0px 1fr;
         grid-template-rows: 200px 1fr;
 
     }
@@ -284,14 +278,19 @@ body {
         gap: 10px;
     }
 
+    .footer {
+        display: none;
+    }
+
   
 
     .sidebar{
-        top: 0;
-        width: 70px;
-        left: 0;
+        width: 0px;
         margin: auto;
-        z-index: 10;
+        min-height: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        z-index: 2;
     }
 
     .sidebar-image  {
@@ -299,16 +298,46 @@ body {
 
     }
 
-     /* .sidebar-image  {
-        margin: 10px 10px;
+    #check {
+        display: none;  
+    }
+    label #btn, label #cancel {
+        position: fixed;
+        cursor: pointer;
+        background: #181a1b;
         height: 50px;
-        width: auto;
-        border: #000;
+        width: 50px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 15px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all .5s ease;
+        z-index: 10;
+    }
+    
+    label #cancel {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    #check:checked ~ label #cancel {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    #check:checked ~ .sidebar {
+        width: 70px;
+    }
+    
 
-    }  */
-
-
-    .sidebar header,#btn,#cancel {
+    .sidebar header {
         display: none;
     }
 
@@ -326,12 +355,12 @@ body {
 
     }
 
-    .sidebar a:hover {
-        width: 200px;
-        background: inherit;
-
+    .sidebar a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid black;
 
     }
+
 
     .sidebar a:hover span{
         opacity: 1;
@@ -352,14 +381,14 @@ body {
 
 @media  (max-width: 550px) {
 
-    body {
+    /* body {
         grid-template-columns: 70px 1fr;
         grid-template-rows:auto;
  
-    }
+    } */
 
        .header-text {
-        padding: 20px 35px;
+        padding: 100px 35px;
     } 
 
 
@@ -395,8 +424,7 @@ body {
     }
 
     .card-icons {
-        font-size: 35px;
-        gap: 15px;
+        gap: 25px;
     }
 
     .gradient {
