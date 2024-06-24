@@ -163,7 +163,7 @@ body {
 
 }
 
-.text{
+.text-one{
     text-align: center;
     color: #f6f7f9;
     padding-left: 20px;
@@ -401,7 +401,7 @@ textarea.input {
         display: none;
     }
 
-    .item {
+    .card {
         grid-template-columns: 1fr;
     }
     .contact {
