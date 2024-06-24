@@ -203,7 +203,7 @@ ul li {
 
 }
 .social i {
-    background: #49454e;
+    background: #181a1b;;
     padding: 5px;
     border-radius: 5px;
     transition: .3s;
@@ -211,7 +211,7 @@ ul li {
 
 }
 
-.social i:hover {
+.social i:hover, .mobile i:hover {
     background: rgba(162, 0, 255, 0.733);
     color: #f6f7f9;
 
@@ -296,6 +296,23 @@ textarea.input {
 .btn:hover {
     color: #ffffff;
     box-shadow: 0 0 5px #e2e2e7;
+}
+
+.mobile {
+    padding-top: 150px;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    visibility: hidden;
+}
+
+.mobile i {
+    background: #181a1b;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+    color: #f6f7f9;
+
 }
 
 
@@ -445,6 +462,15 @@ textarea.input {
         margin-top: 0;
       
     }
+    .input-box .input:focus ~ label,
+    .input-box .input:valid ~ label {
+    top: -15px;
+}
+
+.mobile {
+    visibility:visible;
+}
+
    
 }
 
