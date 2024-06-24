@@ -290,7 +290,7 @@ section .cards .text-card h3{
 .about-text p{
     width: 75%;
     color: #f6f7f9;
-    font-size: clamp(18px ,5vw, 22px);
+    font-size: clamp(20px ,5vw, 22px);
     text-transform: 25px; 
 }
 
