@@ -348,7 +348,7 @@ textarea.input {
         min-height: 10px;
         border: 1px solid black;
         border-radius: 5px;
-        z-index: 2;
+        z-index: 10;
     }
 
     .sidebar-image  {
@@ -373,7 +373,7 @@ textarea.input {
         margin: 15px 10px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         transition: all .5s ease;
-        z-index: 10;
+        z-index: 15;
     }
     
     label #cancel {
@@ -445,6 +445,16 @@ textarea.input {
         height: 700px;
         min-width: 100%;
    
+    }
+
+    #check:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 9;
+
     }
 
     
