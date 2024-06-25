@@ -8,7 +8,7 @@
 }
 html {
     height: 100vh;
-    overflow-x: hidden;
+ 
 }
 
 
@@ -47,7 +47,7 @@ body {
     grid-area: side;
     width: 300px;
     min-height:100vh;
-    transition: all .5s ease;
+    transition: all 1s ease-out;
     overflow: hidden; 
 }
 
@@ -249,7 +249,8 @@ body {
    
 
     .sidebar{
-        width: 0px;
+        width: 200px;
+        left: -100%;
         margin: auto;
         min-height: 10px;
         border: 1px solid black;
@@ -258,13 +259,16 @@ body {
     }
 
     .sidebar-image  {
-       visibility: hidden;
+        margin-top: 55px;
+        margin-left: 40px; 
+       /* visibility: hidden; */
 
     }
 
     #check {
-        display: none;  
+        display: none; 
     }
+
     label #btn, label #cancel {
         position: fixed;
         cursor: pointer;
@@ -297,27 +301,25 @@ body {
     }
     
     #check:checked ~ .sidebar {
-        width: 70px;
+        left: 0;
+    }
+    #check:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left:0;
+        z-index: 9;
+
     }
     
 
     .sidebar header {
-        display: none;
+        font-size: 23px;
+        /* display: none; */
     }
 
 
-    .sidebar span {
-        position: absolute;
-        margin-left: 28px;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-
-    .sidebar a i{
-        margin-left:-10px ;
-
-    }
 
     .sidebar a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -336,15 +338,6 @@ body {
         display: none;
     }
 
-    #check:checked ~ #overlay{
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left:0;
-        z-index: 9;
-
-    }
 
 
 }
@@ -414,18 +407,6 @@ body {
         "c5"; 
 
     }   
-
-
-  
-    .sidebar img{
-        visibility: hidden;
-    }    
-
-
-    .card-image {
-        transition: none;       
-    }
-
 
     .footer-text {
         display: none;
