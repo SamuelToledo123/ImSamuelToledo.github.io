@@ -218,7 +218,7 @@ ul li {
 }
 .text-three {
     text-align: center;
-    font-size: 35px;
+    font-size: clamp(30px,8vw,35px);
     font-weight: 600;
     position: relative;
     padding-top: 20px;
@@ -299,7 +299,7 @@ textarea.input {
 }
 
 .mobile {
-    padding-top: 150px;
+
     justify-content: center;
     display: flex;
     list-style: none;
@@ -313,6 +313,18 @@ textarea.input {
     transition: .3s;
     color: #f6f7f9;
 
+}
+
+.text-mobile {
+    margin-top: 175px;
+    text-align: center;
+    font-size: clamp(30px,8vw,35px);
+    font-weight: 600;
+    position: relative;
+    padding-top: 20px;
+    color: #f6f7f9;
+    visibility: hidden;
+   
 }
 
 
@@ -424,6 +436,18 @@ textarea.input {
     .contact {
         display: none;
     }
+
+    .mobile,.text-mobile {
+        visibility:visible;
+    }
+
+    .card {
+        height: 700px;
+        min-width: 100%;
+   
+    }
+
+    
 }
     
 
@@ -467,10 +491,6 @@ textarea.input {
     top: -15px;
 }
 
-.mobile {
-    visibility:visible;
-}
-
    
 }
 
@@ -487,11 +507,11 @@ textarea.input {
        
     }
 
-    /* ul li {
+    ul li {
         padding-left: 8px;
-        font-size: 27px;
      
-    } */
+     
+    }
 
 
     
