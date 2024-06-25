@@ -162,7 +162,7 @@ body {
     width: 400px;
     height: 600px;
     margin: 10px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #181a1b;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.445);
