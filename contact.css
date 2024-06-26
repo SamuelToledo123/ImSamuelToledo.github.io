@@ -299,7 +299,6 @@ textarea.input {
 }
 
 .mobile {
-
     justify-content: center;
     display: flex;
     list-style: none;
@@ -347,7 +346,8 @@ textarea.input {
         left: -100%;
         margin: auto;
         min-height: auto;
-        border: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
         z-index: 10;

@@ -253,7 +253,8 @@ body {
         left: -100%;
         margin: auto;
         min-height: 10px;
-        border: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
         border-radius: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
         z-index: 10;
@@ -397,7 +398,7 @@ body {
 
 
     .main {
-        padding: 20px 35px;
+        padding: 10px 20px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: minmax(200px, auto);
         grid-template-areas: 
